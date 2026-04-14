@@ -161,3 +161,7 @@
 .line-text strong {
   font-size: 14px;
 }o
+
+body {
+  min-width: 1200px;
+}
