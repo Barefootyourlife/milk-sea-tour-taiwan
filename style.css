@@ -109,29 +109,26 @@
 
 .line-btn {
   position: fixed;
-  right: 20px;
-  bottom: 80px;
+  right: 16px;
+  bottom: 100px;
 
-  padding: 16px 22px;
-
-  background: rgba(0, 0, 0, 0.6); /* 👉 改深一點 */
-  backdrop-filter: blur(10px);
+  padding: 18px 26px;   /* 🔥 再放大 */
+  font-size: 18px;      /* 🔥 字變大 *深色/
 
   color: #fff;
-  font-size: 16px;
-  font-weight: 500;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
 
-  border-radius: 20px;
+  border-radius: 30px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 
   z-index: 9999;
 }
-
 /* 避免文字亂掉 */
 .line-btn span {
   white-space: nowrap;
