@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>悠遊官網7.0</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=yes" />
+  <title>Barefoot Yourlife | 龜山島牛奶海包船體驗</title>
+<meta name="description" content="宜蘭龜山島牛奶海包船體驗，從烏石港出發，提供SUP、水上活動、夕陽行程與2天1夜夜泊。依人數客製船型，輕鬆享受最完整的海上行程。">
+  <style>
+    :root{
+      --bg:#06131f;
+      --bg2:#0d2233;
+      --card:rgba(255,255,255,.10);
+      --card-2:rgba(255,255,255,.16);
+      --line:rgba(255,255,255,.14);
+      --text:#f7fbff;
+      --muted:rgba(255,255,255,.72);
+      --blue:#86d8ff;
+      --cyan:#9ff3ff;
+      --mint:#bdf6ef;
+      --shadow:0 18px 50px rgba(0,0,0,.28);
+      --radius:24px;
+      --radius-sm:16px;
+      --max:1180px;
+      --header-h:72px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:
+        "PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(131,220,255,.18), transparent 24%),
+        radial-gradient(circle at left bottom, rgba(143,255,228,.12), transparent 22%),
+        linear-gradient(180deg,#04101b 0%,#071a29 24%,#081726 100%);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+
+    .container{
+      width:min(var(--max), calc(100% - 28px));
+      margin:0 auto;
+    }
+
+    /* header */
+    .header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      background:rgba(5,18,30,.48);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .header-inner{
+      height:var(--header-h);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+
+     .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.22), rgba(255,255,255,.05)),
+        url('https://assets.codepen.io/16727092/IMG_5719.jpeg') center/cover;
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:var(--shadow);
+      flex:none;
+    }
+
+    .brand-text{
+      min-width:0;
+    }
+    .brand-text strong{
+      display:block;
+      font-size:15px;
+      letter-spacing:.04em;
+      white-space:nowrap;
+    }
+    .brand-text span{
+      display:block;
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      overflow:auto hidden;
+      scrollbar-width:none;
+    }
+    .nav::-webkit-scrollbar{display:none}
+
+    .nav a{
+      white-space:nowrap;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:var(--muted);
+      font-size:14px;
+      transition:.25s ease;
+    }
+    .nav a:hover{
+      color:#fff;
+      transform:translateY(-1px);
+      background:rgba(255,255,255,.12);
+    }
+
+    .cta-btn{
+      white-space:nowrap;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:700;
+      color:#04233a;
+      background:linear-gradient(135deg,var(--cyan),var(--mint));
+      box-shadow:0 8px 24px rgba(132,235,255,.25);
+      display:none;
+    }
+
+    /* hero */
+    .hero{
+      position:relative;
+      min-height:88vh;
+      display:flex;
+      align-items:flex-end;
+      padding:32px 0 30px;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(1,10,18,.18), rgba(1,10,18,.40) 36%, rgba(4,12,22,.82) 100%),
+        url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      transform:scale(1.04);
+      z-index:-2;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0 0;
+      height:45%;
+      background:linear-gradient(180deg, transparent, rgba(6,19,31,.85));
+      z-index:-1;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:22px;
+      align-items:end;
+      width:100%;
+    }
+
+    .hero-copy{
+      padding:28px;
+      border-radius:30px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      box-shadow:var(--shadow);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-size:12px;
+      color:#eaffff;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.11);
+      margin-bottom:16px;
+    }
+
+    .hero h1{
+      margin:0 0 12px;
+      font-size:clamp(32px, 5vw, 64px);
+      line-height:1.05;
+      letter-spacing:.02em;
+    }
+
+    .hero p{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.8;
+      max-width:760px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:22px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:48px;
+      padding:0 18px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      font-weight:700;
+      transition:.25s ease;
+    }
+
+    .btn.primary{
+      color:#072742;
+      background:linear-gradient(135deg,var(--cyan),var(--mint));
+      border:none;
+      box-shadow:0 10px 24px rgba(130,229,255,.22);
+    }
+
+    .btn.secondary{
+      color:#fff;
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-side{
+      display:grid;
+      gap:14px;
+    }
+
+    .info-card{
+      padding:18px;
+      border-radius:22px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      box-shadow:var(--shadow);
+    }
+
+    .info-card h3{
+      margin:0 0 10px;
+      font-size:16px;
+    }
+
+    .mini-list{
+      display:grid;
+      gap:10px;
+      margin:0;
+      padding:0;
+      list-style:none;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    /* section */
+    section{
+      padding:70px 0;
+    }
+
+    .section-head{
+      display:flex;
+      align-items:end;
+      justify-content:space-between;
+      gap:18px;
+      margin-bottom:24px;
+    }
+
+    .section-title{
+      margin:0;
+      font-size:clamp(26px,4vw,42px);
+      line-height:1.1;
+    }
+
+    .section-sub{
+      margin:10px 0 0;
+      color:var(--muted);
+      line-height:1.8;
+      font-size:15px;
+      max-width:760px;
+    }
+
+    /* tabs */
+    .tab-scroll{
+      display:flex;
+      gap:10px;
+      overflow:auto hidden;
+      padding:4px 0 10px;
+      margin-bottom:22px;
+      scrollbar-width:none;
+    }
+    .tab-scroll::-webkit-scrollbar{display:none}
+
+    .tab-btn{
+      flex:none;
+      border:none;
+      color:var(--muted);
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.08);
+      padding:12px 16px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:700;
+      cursor:pointer;
+      transition:.25s ease;
+    }
+
+    .tab-btn.active,
+    .tab-btn:hover{
+      color:#08243b;
+      background:linear-gradient(135deg,var(--cyan),var(--mint));
+      border-color:transparent;
+    }
+
+    .tab-panel{display:none}
+    .tab-panel.active{display:block}
+
+    /* cards */
+    .glass-card{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .trip-layout{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:0;
+    }
+
+    .slider{
+      position:relative;
+      min-height:420px;
+      overflow:hidden;
+      background:#061523;
+    }
+
+    .slides{
+      display:flex;
+      height:100%;
+      transition:transform .45s ease;
+    }
+
+    .slide{
+      min-width:100%;
+      height:420px;
+      background-size:cover;
+      background-position:center;
+      position:relative;
+    }
+
+    .slide::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.28));
+    }
+
+    .slider-nav{
+      position:absolute;
+      left:16px;
+      right:16px;
+      bottom:16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      z-index:2;
+    }
+
+    .slider-btn{
+      width:42px;
+      height:42px;
+      border-radius:999px;
+      border:none;
+      background:rgba(255,255,255,.18);
+      color:#fff;
+      backdrop-filter:blur(10px);
+      cursor:pointer;
+      font-size:18px;
+    }
+
+    .dots{
+      display:flex;
+      gap:8px;
+      justify-content:center;
+      flex:1;
+    }
+
+    .dot{
+      width:9px;
+      height:9px;
+      border-radius:999px;
+      background:rgba(255,255,255,.35);
+      border:none;
+      cursor:pointer;
+      padding:0;
+    }
+    .dot.active{
+      width:26px;
+      background:#fff;
+    }
+
+    .trip-content{
+      padding:28px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .trip-badge{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      color:#dcf9ff;
+      font-size:12px;
+      border:1px solid rgba(255,255,255,.1);
+    }
+
+    .trip-title{
+      margin:0 0 12px;
+      font-size:30px;
+      line-height:1.2;
+    }
+
+    .trip-desc{
+      color:var(--muted);
+      line-height:1.85;
+      font-size:15px;
+      margin:0 0 18px;
+    }
+
+    .trip-meta{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:12px;
+      margin-bottom:18px;
+    }
+
+    .meta-box{
+      padding:14px;
+      border-radius:18px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .meta-box small{
+      display:block;
+      color:var(--muted);
+      margin-bottom:6px;
+      font-size:12px;
+    }
+
+    .meta-box strong{
+      font-size:15px;
+      line-height:1.5;
+    }
+
+    .includes{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:10px;
+      margin:12px 0 22px;
+    }
+
+    .includes span{
+      padding:12px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:#eefcff;
+      font-size:14px;
+    }
+
+    .price-wrap{
+      display:flex;
+      align-items:end;
+      justify-content:space-between;
+      gap:16px;
+      margin-top:auto;
+      padding-top:8px;
+    }
+
+    .price{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+
+    .price small{
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .price strong{
+      font-size:28px;
+      color:#fff;
+    }
+
+    .price em{
+      font-style:normal;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* youtube */
+    .video-card{
+      display:grid;
+      grid-template-columns:1fr .9fr;
+      gap:0;
+      overflow:hidden;
+    }
+
+    .video-embed{
+      position:relative;
+      min-height:420px;
+      background:#000;
+    }
+
+    .video-embed iframe{
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    .video-copy{
+      padding:28px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    /* boats */
+    .boat-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:18px;
+    }
+
+    .boat-card{
+      overflow:hidden;
+    }
+
+    .boat-body{
+      padding:20px;
+    }
+
+    .boat-name{
+      margin:0 0 8px;
+      font-size:22px;
+    }
+
+    .boat-info{
+      margin:0;
+      color:var(--muted);
+      line-height:1.8;
+      font-size:14px;
+    }
+
+    .boat-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:16px;
+    }
+
+    .boat-tags span{
+      padding:10px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      font-size:13px;
+      color:#ecfbff;
+    }
+
+    /* booking */
+    .booking-layout{
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      gap:20px;
+      align-items:start;
+    }
+
+    .calendar-card,
+    .form-card{
+      padding:24px;
+    }
+
+    .calendar-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:16px;
+    }
+
+    .calendar-head h3{
+      margin:0;
+      font-size:22px;
+    }
+
+    .month-switch{
+      display:flex;
+      gap:10px;
+    }
+
+    .month-btn{
+      width:40px;
+      height:40px;
+      border-radius:999px;
+      border:none;
+      background:rgba(255,255,255,.09);
+      color:#fff;
+      cursor:pointer;
+    }
+
+    .weekdays,
+    .calendar-days{
+      display:grid;
+      grid-template-columns:repeat(7, 1fr);
+      gap:8px;
+    }
+
+    .weekdays span{
+      text-align:center;
+      color:var(--muted);
+      font-size:12px;
+      padding:10px 0 4px;
+    }
+
+    .day{
+      min-height:58px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.05);
+      display:flex;
+      align-items:flex-start;
+      justify-content:flex-start;
+      padding:10px;
+      color:#fff;
+      cursor:pointer;
+      transition:.22s ease;
+      font-size:14px;
+    }
+
+    .day:hover{
+      transform:translateY(-1px);
+      background:rgba(255,255,255,.10);
+    }
+
+    .day.muted{
+      color:rgba(255,255,255,.28);
+      background:rgba(255,255,255,.025);
+    }
+
+    .day.selected{
+      background:linear-gradient(135deg,var(--cyan),var(--mint));
+      color:#08233a;
+      border-color:transparent;
+      font-weight:800;
+    }
+
+    .selected-date{
+      margin-top:16px;
+      padding:14px 16px;
+      border-radius:16px;
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.08);
+      color:#eaffff;
+      font-size:14px;
+    }
+
+    form{
+      display:grid;
+      gap:14px;
+    }
+
+    .field{
+      display:grid;
+      gap:8px;
+    }
+
+    .field label{
+      font-size:13px;
+      color:#ebfbff;
+    }
+
+    .field input,
+    .field select,
+    .field textarea{
+      width:100%;
+      border:none;
+      outline:none;
+      color:#fff;
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:16px;
+      padding:14px 14px;
+      font-size:15px;
+      font-family:inherit;
+    }
+
+    .field textarea{
+      min-height:120px;
+      resize:vertical;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder{
+      color:rgba(255,255,255,.42);
+    }
+
+    .submit-btn{
+      margin-top:6px;
+      min-height:52px;
+      border:none;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:15px;
+      font-weight:800;
+      color:#08233a;
+      background:linear-gradient(135deg,var(--cyan),var(--mint));
+      box-shadow:0 10px 26px rgba(140,235,255,.20);
+    }
+
+    /* faq */
+    .faq-list{
+      display:grid;
+      gap:14px;
+    }
+
+    details.faq-item{
+      border-radius:22px;
+      overflow:hidden;
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.10);
+    }
+
+    details.faq-item summary{
+      list-style:none;
+      cursor:pointer;
+      padding:18px 20px;
+      font-weight:700;
+      position:relative;
+      padding-right:56px;
+    }
+
+    details.faq-item summary::-webkit-details-marker{display:none}
+
+    details.faq-item summary::after{
+      content:"+";
+      position:absolute;
+      right:20px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:22px;
+      color:#dffbff;
+      transition:.2s ease;
+    }
+
+    details[open].faq-item summary::after{
+      content:"−";
+    }
+
+    .faq-answer{
+      padding:0 20px 20px;
+      color:var(--muted);
+      line-height:1.85;
+      font-size:15px;
+    }
+
+    /* footer */
+    .footer{
+      padding:40px 0 70px;
+      color:var(--muted);
+      text-align:center;
+      font-size:14px;
+    }
+
+    /* floating action */
+    .float-book{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:999;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 18px;
+      border-radius:999px;
+      color:#062640;
+      font-weight:800;
+      background:linear-gradient(135deg,var(--cyan),var(--mint));
+      box-shadow:0 12px 30px rgba(132,236,255,.26);
+    }
+
+    @media (max-width: 980px){
+      .hero-grid,
+      .trip-layout,
+      .video-card,
+      .booking-layout{
+        grid-template-columns:1fr;
+      }
+
+      .hero{
+        min-height:auto;
+        padding-top:28px;
+      }
+
+      .slider,
+      .slide,
+      .video-embed{
+        min-height:320px;
+        height:320px;
+      }
+
+      .boat-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (min-width: 981px){
+      .cta-btn{display:inline-flex}
+    }
+
+    @media (max-width: 720px){
+      .header-inner{
+        gap:12px;
+      }
+
+      .brand-text span{
+        display:none;
+      }
+
+      .hero-copy,
+      .info-card,
+      .trip-content,
+      .video-copy,
+      .calendar-card,
+      .form-card{
+        padding:20px;
+      }
+
+      .trip-meta,
+      .includes{
+        grid-template-columns:1fr;
+      }
+
+      .section-head{
+        display:block;
+      }
+
+      .nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <div class="brand-mark"></div>
+        <div class="brand-text">
+          <strong>Barefoot Yourlife</strong>
+          <span>龜山島牛奶海包船</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#trips">行程介紹</a>
+        <a href="#video">影片</a>
+        <a href="#boats">船型介紹</a>
+        <a href="#booking">預約表單</a>
+        <a href="#faq">常見問題</a>
+      </nav>
+
+    </div>
+  </header>
+ <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">光腳悠遊 ✦ 海上包船體驗</div>
+          <h1>龜山島牛奶海<br>專屬包船套裝行程</h1>
+          <p>
+            從日出第一道光，到夜泊海上的靜謐晚風，
+帶您深入體驗宜蘭龜山島牛奶海包船行程的多樣魅力。
+涵蓋日出、上午、夕陽與兩天一夜夜泊，
+以及烏岩角神秘海灘等特色航線，
+同時推出石垣島 × 與那國島六天五夜行程，
+延伸至更遠的海域，打造完整且具質感的海上旅遊體驗。
+          </p>
+
+          <div class="hero-actions">
+            <a href="#trips" class="btn primary">查看行程</a>
+            <a href="#boats" class="btn secondary">看船型</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="info-card">
+            <h3>熱門行程</h3>
+            <ul class="mini-list">
+              <li>日出場｜清晨出海，拍下最柔和的海色</li>
+              <li>上午場｜適合玩水、拍照、輕鬆包船</li>
+              <li>夕陽場｜金色海面氛圍感直接拉滿</li>
+              <li>夜泊兩天一夜｜海上過夜體驗更完整</li>
+            </ul>
+          </div>
+       <div class="info-card">
+            <h3>預約流程</h3>
+            <ul class="mini-list">
+              <li>選填提交預約表單</li>
+              <li>加入官方LINE進行確認</li>
+              <li>客製安排行程與船型</li>
+              <li>確認完成即可保留出航資格</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- 行程介紹 -->
+    <section id="trips">
+      <div class="container">
+        <div class="section-head center">
+  <div>
+            <h2 class="section-title">行程介紹</h2>
+            <p class="section-sub">
+              清晨日出到夜晚星空
+讓每一位旅人都能找到最適合自己的海上體驗。
+            </p>
+          </div>
+        </div>
+
+        <div class="tab-scroll" id="tripTabs">
+          <button class="tab-btn active" data-tab="sunrise">日出</button>
+          <button class="tab-btn" data-tab="morning">上午</button>
+          <button class="tab-btn" data-tab="sunset">夕陽</button>
+          <button class="tab-btn" data-tab="overnight">夜泊兩天一夜</button>
+          <button class="tab-btn" data-tab="wuyanjiao">烏岩角神秘海灘</button>
+   
+        </div>
+
+        <!-- 日出 -->
+        <div class="tab-panel active" id="sunrise">
+          <div class="glass-card trip-layout">
+            <div class="slider" data-slider="sunrise-slider">
+              <div class="slides">
+                     <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6180.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_10.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_11.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="trip-content">
+              <span class="trip-badge">Sunrise Trip</span>
+              <h3 class="trip-title">日出行程</h3>
+              <p class="trip-desc">
+              唯一開放在牛奶海下水體驗的時段，結合SUP與專屬拍照， 打造近距離的沉浸式牛奶海海上體驗
+              </p>
+
+              <div class="trip-meta">
+                <div class="meta-box">
+                  <small>時段</small>
+                  <strong>04:30 出港｜09:30 進港</strong>
+                </div>
+                <div class="meta-box">
+                  <small>適合對象</small>
+                  <strong>想下牛奶海體驗的旅客</strong>
+                </div>
+              </div>
+
+              <div class="includes">
+                <span>限定開放的牛奶海下水體驗</span>
+                <span>迎接清晨第一道陽光</span>
+                <span>熱門加購時段</span>
+                <span>享受最純粹的牛奶海</span>
+              </div>
+
+              <div class="price-wrap">
+                <div class="price">
+                  <small>價格說明</small>
+                  <strong>依人數報價</strong>
+                  <em>方案價格請參考下方常見問題</em>
+                </div>
+                <a href="#booking" class="btn primary">預約這個行程</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 上午 -->
+        <div class="tab-panel" id="morning">
+          <div class="glass-card trip-layout">
+            <div class="slider" data-slider="morning-slider">
+              <div class="slides">
+                 <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6630.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6403.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6628.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="trip-content">
+              <span class="trip-badge">Morning Trip</span>
+              <h3 class="trip-title">上午行程</h3>
+              <p class="trip-desc">
+                這個時段最適合想玩得剛剛好的人。光線穩定、海色清楚，安排牛奶海、
+                拍照、水上活動都很順，整體節奏輕鬆又好拍。
+              </p>
+
+              <div class="trip-meta">
+                <div class="meta-box">
+                  <small>建議時段</small>
+                  <strong>06:30 出港｜11:30 進港</strong>
+                </div>
+                <div class="meta-box">
+                  <small>適合對象</small>
+                  <strong>海風較溫和舒適<br>適合第一次來牛奶海旅客</strong>
+                </div>
+              </div>
+
+              <div class="includes">
+                <span>穩定海況最佳</span>
+                <span>海水最清澈時段</span>
+                <span>上午風景光線不踩雷</span>
+                <span>專屬你的海上空間</span>
+              </div>
+
+              <div class="price-wrap">
+                <div class="price">
+                  <small>價格說明</small>
+                  <strong>依人數報價</strong>
+                  <em>方案價格請參考下方常見問題</em>
+                </div>
+                <a href="#booking" class="btn primary">預約這個行程</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 夕陽 -->
+        <div class="tab-panel" id="sunset">
+          <div class="glass-card trip-layout">
+            <div class="slider" data-slider="sunset-slider">
+              <div class="slides">
+               <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_5986.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6465.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6398.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="trip-content">
+              <span class="trip-badge">Sunset Trip</span>
+              <h3 class="trip-title">夕陽行程</h3>
+              <p class="trip-desc">
+                夕陽把整片海染成金色，隨著天色變化，船上氣氛與沿途風景打造出氛圍與畫面感兼具的海上體驗。
+
+
+              </p>
+
+              <div class="trip-meta">
+                <div class="meta-box">
+                  <small>建議時段</small>
+                  <strong>13:30 出港｜18:30 進港</strong>
+                </div>
+                <div class="meta-box">
+                  <small>適合對象</small>
+                  <strong>慶生、聚會、情侶、朋友出遊</strong>
+                </div>
+              </div>
+
+              <div class="includes">
+                <span>夕陽海景巡航</span>
+                <span>船上拍照氛圍佳</span>
+                <span>適合派對感體驗</span>
+                <span>求婚的熱門時段</span>
+              </div>
+
+              <div class="price-wrap">
+                <div class="price">
+                  <small>價格說明</small>
+                  <strong>依人數報價</strong>
+                  <em>方案價格請參考下方常見問題</em>
+                </div>
+                <a href="#booking" class="btn primary">預約這個行程</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 夜泊 -->
+        <div class="tab-panel" id="overnight">
+          <div class="glass-card trip-layout">
+            <div class="slider" data-slider="overnight-slider">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_9.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6788.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6790.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="trip-content">
+              <span class="trip-badge">Overnight Stay</span>
+              <h3 class="trip-title">夜泊兩天一夜</h3>
+              <p class="trip-desc">
+                海上最完整的體驗版本。從白天出海、傍晚晚餐、夜晚停泊到隔天早晨，
+                整體節奏更舒服，也更有專屬感，適合想要深度感受海上的客人。
+              </p>
+
+              <div class="trip-meta">
+                <div class="meta-box">
+                  <small>建議時段</small>
+                  <strong>14:00 出港｜隔日 11:00 回港</strong>
+                </div>
+                <div class="meta-box">
+                  <small>適合對象</small>
+                  <strong>想體驗船宿的旅客</strong>
+                </div>
+              </div>
+
+              <div class="includes">
+                <span>海上夜泊體驗</span>
+                <span>附贈早餐與晚餐</span>
+                <span>晚餐安排燒烤 / 火鍋</span>
+                <span>浪漫的夜晚星空</span>
+              </div>
+
+              <div class="price-wrap">
+                <div class="price">
+                  <small>價格說明</small>
+                  <strong>依人數報價</strong>
+                  <em>方案價格請參考下方常見問題</em>
+                </div>
+                <a href="#booking" class="btn primary">預約這個行程</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 烏岩角 -->
+        <div class="tab-panel" id="wuyanjiao">
+          <div class="glass-card trip-layout">
+            <div class="slider" data-slider="wuyanjiao-slider">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6418.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6419.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6420.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="trip-content">
+              <span class="trip-badge">Secret Beach Route</span>
+              <h3 class="trip-title">烏岩角神秘海灘</h3>
+              <p class="trip-desc">
+                東澳灣以其壯闊的海灣和潔淨的海水聞名，被譽為台灣最美的海灣之一，而位於其中的「烏岩角」更是這片海域的一顆瑰寶，是一處融合了多重自然元素的絕美海灘
+              </p>
+
+              <div class="trip-meta">
+                <div class="meta-box">
+                  <small>行程時間</small>
+                  <strong>7.5小時</strong>
+                </div>
+                <div class="meta-box">
+                  <small>適合對象</small>
+                  <strong>喜歡探索特殊路線的客人</strong>
+                </div>
+              </div>
+
+              <div class="includes">
+                <span>秘境海岸體驗</span>
+                <span>飽覽沿途北海岸美景</span>
+                <span>遊覽烏岩角神秘海灘海蝕洞</span>
+                <span>行程內容包含一餐</span>
+              </div>
+
+              <div class="price-wrap">
+                <div class="price">
+                  <small>價格說明</small>
+                  <strong>依人數報價</strong>
+                  <em>方案價格請參考下方常見問題</em>
+                </div>
+                <a href="#booking" class="btn primary">預約這個行程</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+
+    </section>
+
+    <!-- YouTube -->
+    <section id="video">
+      <div class="container">
+        <div class="section-head center">
+  <div>
+            <h2 class="section-title">行程影片</h2>
+            <p class="section-sub">
+             每一段航程都有不同的風景與節奏。 <br> 
+這不只是一次出海，而是一段讓人放鬆、玩樂、重新感受海的旅程
+            </p>
+          </div>
+        </div>
+
+
+        <div class="glass-card video-card">
+          <div class="video-embed">
+            <!-- 把 YOUR_VIDEO_ID 改成你的 YouTube 影片 ID -->
+            <iframe 
+  src="https://www.youtube.com/embed/F49ORpJjI3I"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+          </div>
+          <div class="video-copy">
+            <span class="trip-badge">YouTube Section</span>
+            <h3 class="trip-title">牛奶海水上體驗</h3>
+            <p class="trip-desc">
+              透過照片紀錄龜山島牛奶海的海上回憶。
+從航程風景到水上活動，將每一段旅程的節奏與氛圍真實記錄，
+讓您在航行中，感受整體行程的樣貌。
+            </p>
+            <div class="includes">
+              <span>海上空拍視角</span>
+              <span>多元水上活動</span>
+              <span>精選行程紀錄</span>
+              <span>專屬影片回憶</span>
+            </div>
+            <a class="btn primary" href="https://youtu.be/F49ORpJjI3I?si=dcwGqXo5VmWt3Un2" target="_blank">查看 YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 船型介紹 -->
+    <section id="boats">
+      <div class="container">
+        <div class="section-head center">
+  <div>
+            <h2 class="section-title">船型介紹</h2>
+            <p class="section-sub">
+              提供多款船型選擇從雙體帆船到豪華遊艇打造完整且安心的海上體驗。
+            </p>
+          </div>
+        </div>
+        <div class="boat-grid">
+          <!-- 1 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat1">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_5905.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_5906.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">56呎豪華遊艇｜飛行角</h3>
+              <p class="boat-info">全船大面積窗戶引進更多自然光線，提供良好的海上視野，同時節能減碳。客製化內部空間配置極大化，讓您享受到70呎以上遊艇的奢華舒適感受。
+
+</p>
+              <div class="boat-tags">
+                <span>搭載人數｜10-20人</span>
+                <span>豪華遊艇</span>
+              </div>
+            </div>
+          </article>
+
+
+          
+          <!-- 2 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat2">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6340.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6602.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">46呎雙體帆船｜阿莫號</h3>
+              <p class="boat-info">在「阿莫」上，您將享受到寬敞舒適的生活空間，包括大型駕駛艙、滑動長椅等設施。最多可容納28人，讓您和家人朋友共度美好時光。
+
+</p>
+              <div class="boat-tags">
+                <span>搭載人數｜12-28人</span>
+                <span>雙體帆船</span>
+              </div>
+            </div>
+          </article>
+
+<!-- 3 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat3">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6343.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6603.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">45呎雙體帆船｜合恩角</h3>
+              <p class="boat-info">「合恩角」擁有令人驚嘆的設計和出色的航行性能，透過大型窗戶和開放式空間，營造了一個明亮通風的環境，讓您可以盡情享受海上的美景。其豪華設施和舒適空間使您能夠放鬆身心，享受一段奢華的航行之旅。
+
+</p>
+              <div class="boat-tags">
+                <span>搭載人數｜12-23人</span>
+                <span>雙體帆船</span>
+              </div>
+            </div>
+          </article>
+
+
+             <!-- 4 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat4">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_8.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6341.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">45呎雙體帆船｜好望角</h3>
+              <p class="boat-info">「好望角」年輕感海上行程為回購率高的船型<br>來自法國的經典雙體帆船，結合穩定性與舒適度，打造輕鬆自在的海上生活體驗。無論是放鬆、拍照還是水上活動，都能一次滿足。</p>
+              <div class="boat-tags">
+                <span>搭載人數｜12-23人</span>
+                <span>雙體帆船</span>
+              </div>
+            </div>
+          </article>
+
+              <!-- 5 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat5">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6607.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6608.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">40呎雙體帆船｜綠蠵龜</h3>
+              <p class="boat-info">「綠蠵龜 」是一艘由法國製造，多位知名設計師打造的優雅雙體帆船。精美的外觀和卓越的航行性能使其成為探索海洋的理想之選，讓您更輕鬆地享受海上之旅。
+
+</p>
+              <div class="boat-tags">
+                <span>搭載人數｜12-20人</span>
+                <span>雙體帆船</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat6">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6609.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6610.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">29呎小遊艇｜下班後</h3>
+              <p class="boat-info">想包船但人數不多嗎～
+「下班後」是您的理想選擇！<br>
+無論是與家人還是朋友一起度過悠閒時光，還是獨自享受海上的寧靜，小遊艇都能滿足您的需求。</p>
+              <div class="boat-tags">
+                <span>搭載人數｜3-7人</span>
+                <span>小遊艇</span>
+              </div>
+            </div>
+          </article>
+
+        <!-- 7 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat7">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6611.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6612.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">亞太1號</h3>
+              <p class="boat-info">舷外機雙引擎快艇具有強大的動力，提供了更高的速度和更強的穩定性。增加了艇船的靈活性，還提高了其在各種海上條件下的性能表現，為乘客帶來更平穩、更安全的航行體驗。
+
+</p>
+              <div class="boat-tags">
+                <span>搭載人數｜8-12人</span>
+                <span>39呎遊艇</span>
+              </div>
+            </div>
+          </article>
+
+        <!-- 8 -->
+          <article class="glass-card boat-card">
+            <div class="slider" data-slider="boat8">
+              <div class="slides">
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6613.jpeg')"></div>
+                <div class="slide" style="background-image:url('https://assets.codepen.io/16727092/IMG_6616.jpeg')"></div>
+              </div>
+              <div class="slider-nav">
+                <button class="slider-btn prev">‹</button>
+                <div class="dots"></div>
+                <button class="slider-btn next">›</button>
+              </div>
+            </div>
+            <div class="boat-body">
+              <h3 class="boat-name">亞太2號</h3>
+              <p class="boat-info">快艇配備了豐富的水上設施，例如浮潛裝備、釣竿、SUP、造型泳圈等，讓乘客能夠在航行過程中盡情享受各種水上活動。增加了乘客的娛樂選擇，與大自然更加親密地互動，體驗海洋的奇妙。</p>
+              <div class="boat-tags">
+                <span>搭載人數｜13-17人</span>
+                <span>40呎快艇</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 預約 -->
+    <section id="booking">
+      <div class="container">
+        <div class="section-head center">
+  <div>
+            <h2 class="section-title">預約表單</h2>
+            <p class="section-sub">
+              填寫表單後加入官方LINE確認預約資訊以確保您的預訂資格。
+            </p>
+          </div>
+        </div>
+
+        <div class="booking-layout">
+          <div class="glass-card calendar-card">
+            <div class="calendar-head">
+              <h3 id="monthLabel">2026 年 4 月</h3>
+              <div class="month-switch">
+                <button class="month-btn" id="prevMonth">‹</button>
+                <button class="month-btn" id="nextMonth">›</button>
+              </div>
+            </div>
+
+            <div class="weekdays">
+              <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+            </div>
+            <div class="calendar-days" id="calendarDays"></div>
+            <div class="selected-date" id="selectedDateText">尚未選擇日期</div>
+          </div>
+
+          <div class="glass-card form-card">
+            <h3 style="margin:0 0 18px;font-size:22px;">預約表單</h3>
+            <form>
+              <div class="field">
+ <!-- 姓名 -->
+<div class="field">
+  <label>姓名</label>
+  <input id="name" type="text" placeholder="請輸入姓名">
+</div>
+
+<!-- 搭船日期（這個是日曆控制，不用改） -->
+<div class="field">
+  <label>搭船日期</label>
+  <input id="bookingDate" type="text" placeholder="請先點選左側日曆" readonly>
+</div>
+
+<!-- 人數 -->
+<div class="field">
+  <label>人數</label>
+  <input id="people" type="number" min="1" placeholder="請輸入搭乘人數">
+</div>
+
+              <div class="field">
+                <label>套裝行程</label>
+                <select id="plan">
+                  <option>請選擇行程</option>
+                  <option>日出行程</option>
+                  <option>上午行程</option>
+                  <option>夕陽行程</option>
+                  <option>夜泊兩天一夜</option>
+                  <option>烏岩角神秘海灘</option>
+                </select>
+              </div>
+
+              <div class="field">
+   <label>加購項目</label>
+
+<div class="addon-dropdown">
+
+  <!-- 點擊這裡 -->
+  <div class="addon-title" onclick="toggleAddon()">
+    選擇加購項目 ▼
+  </div>
+
+  <!-- 收合內容 -->
+  <div id="addonContent" style="display:none; margin-top:10px;">
+
+    <div id="addon">
+
+      <label>📷 拍攝服務</label>
+      <label><input type="checkbox" value="空拍攝影 $4000" data-price="4000"> 空拍攝影 $4000</label>
+      <label><input type="checkbox" value="專業船拍 $2000" data-price="2000"> 專業船拍 $2000</label>
+
+      <br><br>
+
+      <label>🌊 水上活動</label>
+      <label><input type="checkbox" value="香蕉船 $4000" data-price="4000"> 香蕉船 $4000</label>
+      <label><input type="checkbox" value="大型溜滑梯 $6500" data-price="6500"> 大型溜滑梯 $6500</label>
+      <label><input type="checkbox" value="水上摩托車 $15000" data-price="15000"> 水上摩托車 $15000</label>
+      <label><input type="checkbox" value="拖曳水上沙發 $4000" data-price="4000"> 拖曳水上沙發 $4000</label>
+      <label><input type="checkbox" value="大型海上泳池 $5000" data-price="5000"> 大型海上泳池 $5000</label>
+
+      <br><br>
+
+      <label>🍖 餐飲設備</label>
+      <label><input type="checkbox" value="烤肉清潔費 $2500" data-price="2500"> 烤肉清潔費 $2500</label>
+      <label><input type="checkbox" value="烤肉架租借 $3500" data-price="3500"> 烤肉架租借 $3500</label>
+      <label><input type="checkbox" value="卡拉OK $3000" data-price="3000"> 卡拉OK $3000</label>
+
+      <br><br>
+
+      <label>🔥 船隻加時</label>
+      <label><input type="checkbox" value="雙體帆船加時1小時 $10000" data-price="10000"> 雙體帆船加時1小時 $10000</label>
+
+      <br><br>
+
+      <label>🐶 其他</label>
+      <label><input type="checkbox" value="寵物清潔費（10隻以上）$7000" data-price="7000"> 寵物清潔費（10隻以上）$7000</label>
+      <label><input type="checkbox" value="寵物清潔費（5隻以上）$3500" data-price="3500"> 寵物清潔費（5隻以上）$3500</label>
+      <label><input type="checkbox" value="日出加價 $4000" data-price="4000"> 日出加價 $4000</label>
+
+    </div>
+
+  </div>
+
+</div>
+
+              <div class="field">
+                <label>特殊需求備注欄</label>
+               <textarea id="note" placeholder="例如：想安排慶生佈置、想加購活動、是否有長輩或小朋友同行、其他需求等"></textarea>
+              </div>
+
+             <button type="button" onclick="sendToLine()" class="submit-btn">
+送出預約需求
+</button>
+
+<!-- 🔥 就加在這裡 -->
+<div id="orderCard" style="
+  display:none;
+  background:rgba(255,255,255,0.08);
+  border-radius:16px;
+  padding:16px;
+  margin-top:12px;
+  backdrop-filter: blur(10px);
+">
+
+  <h3 style="margin-bottom:10px;">預約確認</h3>
+
+  <pre id="orderText" style="
+    white-space:pre-wrap;
+    font-size:14px;
+    line-height:1.6;
+  "></pre>
+
+  <button onclick="copyText()" style="
+    margin-top:10px;
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:#4fd1c5;
+    color:#000;
+    font-weight:bold;
+  ">
+    複製預約資訊
+  </button>
+
+</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head center">
+  <div>
+            <h2 class="section-title">常見問題</h2>
+            <p class="section-sub">
+              如有任何問題歡迎加入悠遊官方LINE好友私訊小編
+            </p>
+          </div>
+        </div>
+
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>1. 牛奶海行程價格怎麼計算？</summary>
+            <div class="faq-answer">
+  <p>我們的套裝行程會依照「人數」與「船型」安排，以下為基本價格參考：</p>
+
+  <p><strong>【56呎豪華遊艇】</strong><br>
+  10人：平日 $40,000 / 假日 $45,000<br>
+  15人：平日 $43,000 / 假日 $50,000<br>
+  16人：平日 $46,000 / 假日 $52,000<br>
+  20人：平日 $52,000 / 假日 $60,000
+  </p>
+
+  <p><strong>【46、45呎雙體帆船】</strong><br>
+  12人：平日 $40,000 / 假日 $46,000<br>
+  15人以下：平日 $43,000 / 假日 $46,000<br>
+  16人以上：平日 $47,000 / 假日 $52,000<br>
+  23人：平日 $52,000 / 假日 $60,000<br>
+  23至28人（46呎）：24人以上每增加1人加收 $3,000
+  </p>
+
+  <p><strong>【40呎雙體帆船】</strong><br>
+  12人：平日 $40,000 / 假日無販售最低人數<br>
+  15人以下：平日 $43,000 / 假日 $46,000<br>
+  16人以上：平日 $45,000 / 假日 $52,000<br>
+  20人：平日 $52,000 / 假日 $58,000
+  </p>
+
+  <p><strong>【29呎小遊艇】</strong><br>
+  3人：$15,000<br>
+  4人：$16,500<br>
+  5人：$20,000<br>
+  6人：$24,000<br>
+  7人：$27,000
+  </p>
+
+  <p>※ 以上價格皆為基本套裝行程參考，實際仍會依照人數、船型與需求安排。<br>
+  ※ 上述價格不包含加購項目。</p>
+</div></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>2. 行程會配備什麼呢？</summary>
+            <div class="faq-answer">
+  <p><strong>套裝配置會依人數不同做調整，以下為各人數方案內容：</strong></p>
+
+  <p><strong>【3～4人】</strong><br>
+  ・1 船長＋1 水手<br>
+  ・2 張 SUP＋水上漂浮魔毯<br>
+  ・軟性飲料 1 手＋飲用水一箱＋超值包餅乾 8 包
+  </p>
+
+  <p><strong>【5～7人】</strong><br>
+  ・1 船長＋1 水手<br>
+  ・3～4 張 SUP＋水上漂浮魔毯<br>
+  ・軟性飲料 2 手＋飲用水一箱＋超值包餅乾 8 包
+  </p>
+
+  <p><strong>【8人】</strong><br>
+  ・1 船長＋1 水手＋1 安全戒護員+1<br>
+  ・6 張 SUP＋水上漂浮魔毯＋泡泡池<br>
+  ・軟性飲料 3 手＋飲用水一箱＋超值包餅乾 8 包<br>
+  ・宜蘭特色名產（綜合冰糕 10 入）
+  </p>
+
+  <p><strong>【10～15人】</strong><br>
+  ・1 船長＋1 水手＋1 安全戒護員+1<br>
+  ・6 張 SUP＋水上漂浮魔毯＋泡泡池＋單眼相機拍攝<br>
+  ・軟性飲料 4 手＋飲用水一箱＋超值包餅乾 8 包<br>
+  ・宜蘭特色名產（綜合冰糕 10 入）
+  </p>
+
+  <p><strong>【16人】</strong><br>
+  ・1 船長＋1 水手＋1 安全戒護員＋1 專業 SUP 教練<br>
+  ・8 張 SUP＋水上漂浮魔毯＋泡泡池＋單眼相機拍攝＋大型滑梯<br>
+  ・軟性飲料 5 手＋飲用水一箱＋超值包餅乾 8 包<br>
+  ・宜蘭特色名產（綜合冰糕 10 入）＋窯烤麵包 2 條
+  </p>
+
+  <p><strong>【20人以上（大全配方案）】</strong><br>
+  ・1 船長＋1 水手＋1 安全戒護員＋1 專業 SUP 教練<br>
+  ・8 張 SUP＋水上漂浮魔毯＋泡泡池＋單眼相機拍攝＋大型滑梯<br>
+  ・軟性飲料 8 手＋飲用水一箱＋超值包餅乾 8 包<br>
+  ・宜蘭特色名產（綜合冰糕 15 入）＋窯烤麵包 2 條
+  </p>
+
+  <p>※ 實際內容會依人數做彈性調整</p>
+</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>3. 如何預約牛奶海包船行程？</summary>
+            <div class="faq-answer">官網預訂填寫完成，會導入到LINE官方，加入好友傳送資訊與小編確認，完成訂金匯款後即可完成預訂。</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>4. 如果天氣不好怎麼辦？</summary>
+            <div class="faq-answer">船長會在出發前3天依海況評估是否適合出海 <br>若中央氣象局72小時預報浪高超過1.9米或發布颱風警報， 行程將取消並提供全額退款或協助改期</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>5. 可以帶寵物嗎？</summary>
+            <div class="faq-answer">如有攜帶寵物，寵物犬貓必需要穿鞋套，在船上需有牽繩繫著，避免發生危險。<br>
+僅接受寵物為犬（大型犬恕不接受）、貓和兔子<br>
+              請您選用堅固且寵物有足夠活動空間的籠子。<br>
+若攜帶寵物超過5隻酌收清潔費$3,500，<br>
+超過10隻以上酌收清潔費$7,000。</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>6. 船上有可盥洗的地方嗎？</summary>
+            <div class="faq-answer">每艘船都設有室外沖洗設備可以使用，請自備毛巾。<br>等待回到碼頭後，碼頭管理中心設有淋浴空間可以做完整的盥洗。</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>7. 容易暈船怎麼辦？</summary>
+            <div class="faq-answer">建議您:<br>出發前保持充足睡眠，避免飲酒過度疲勞、食用乳製品。<br>在登船前30分鐘服用暈船藥，可以減輕暈船的困擾。<br>
+請自行準備暈船藥，因每個人體質狀況不同，我們無法提供暈船藥物，敬請見諒！</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>8. 是否會在牛奶海下水拍照？</summary>
+            <div class="faq-answer">僅限定日出行程可以，<br>視當天船長判斷海況、風況、流向決定。<br>
+位於龜首牛奶海噴發點的海域是不能下水的。<br>因為龜首海域屬於航道，所有船隻都會航行經過，<br>所以日出行程以外時段是不能在此下水的。</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>9. 自己帶酒水飲料，會收取開瓶費與清潔費嗎？</summary>
+            <div class="faq-answer">可以自行準備酒水飲料，不會收取開瓶費用。<br>如特殊活動影響原有部置會酌收費用。</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>10. 如果想取消行程，是否會全額退費?</summary>
+            <div class="faq-answer">如非不可抗拒因素，因故需取消行程將收取退訂手續費，費用計算方式如下：<br>
+出發前31天可全額退費<br>
+21 － 30天取消收取包船手續費：20%<br>
+11 － 20天取消收取包船手續費：30%<br>
+08 － 10天取消收取包船手續費：50%<br>
+07 天前取消則需：全額付費</div>
+          </details>
+        </div>
+      </div>
+    <div class="container">
+  <div class="footer-card">
+
+  <div class="footer-left">
+    <h3>Barefoot Yourlife 光腳悠遊</h3>
+    <p>頭城烏石港出發｜龜山島牛奶海SUP體驗｜宜蘭包船推薦</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1FoVjWuB4A/?mibextid=wwXIfr" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.instagram.com/_barefoot_yourlife2.0?igsh=dW92ajJkdzNsaGsz&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://lin.ee/dLfi96J" target="_blank">
+        <i class="fab fa-line"></i>
+      </a>
+
+      <a href="https://maps.app.goo.gl/Y6EUAj73Yb16JZzw5?g_st=ic" target="_blank">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <a href="https://lin.ee/dLfi96J" target="_blank" class="cta-btn">
+      了解更多
+    </a>
+  </div>
+
+</div>
+
+
+
+  
+  
+  <footer class="footer">
+    <div class="container">
+      Barefoot Yourlife © 2026 ｜ 龜山島牛奶海包船體驗
+    </div>
+  </footer>
+
+  <a href="https://line.me/R/ti/p/@759xdtkz" target="_blank" class="line-btn">
+  <span class="line-text">
+  <small>立即加入</small>
+  <strong>LINE好友</strong>
+</span>
+</a>
+
+  <script>
+    /* 行程 tabs */
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabPanels.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        document.getElementById(tab).classList.add('active');
+      });
+    });
+
+    /* 通用 slider */
+    document.querySelectorAll('.slider').forEach((slider) => {
+      const slidesWrap = slider.querySelector('.slides');
+      const slides = slider.querySelectorAll('.slide');
+      const prev = slider.querySelector('.prev');
+      const next = slider.querySelector('.next');
+      const dotsWrap = slider.querySelector('.dots');
+      let current = 0;
+
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => go(i));
+        dotsWrap.appendChild(dot);
+      });
+
+      const dots = dotsWrap.querySelectorAll('.dot');
+
+      function update(){
+        slidesWrap.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      }
+
+      function go(i){
+        current = (i + slides.length) % slides.length;
+        update();
+      }
+
+      prev.addEventListener('click', () => go(current - 1));
+      next.addEventListener('click', () => go(current + 1));
+
+      update();
+    });
+
+    /* 日曆 */
+    const calendarDays = document.getElementById('calendarDays');
+    const monthLabel = document.getElementById('monthLabel');
+    const selectedDateText = document.getElementById('selectedDateText');
+    const bookingDate = document.getElementById('bookingDate');
+    const prevMonth = document.getElementById('prevMonth');
+    const nextMonth = document.getElementById('nextMonth');
+
+    const today = new Date();
+    let currentMonth = today.getMonth();
+    let currentYear = today.getFullYear();
+    let selectedFullDate = null;
+
+    function renderCalendar(year, month){
+      calendarDays.innerHTML = '';
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const lastDate = new Date(year, month + 1, 0).getDate();
+      const prevLastDate = new Date(year, month, 0).getDate();
+
+      monthLabel.textContent = `${year} 年 ${month + 1} 月`;
+
+      for(let i = firstDay - 1; i >= 0; i--){
+        const day = document.createElement('button');
+        day.className = 'day muted';
+        day.textContent = prevLastDate - i;
+        calendarDays.appendChild(day);
+      }
+
+      for(let d = 1; d <= lastDate; d++){
+        const day = document.createElement('button');
+        day.className = 'day';
+        day.textContent = d;
+
+        const full = `${year}-${String(month + 1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+        day.dataset.date = full;
+
+        if(selectedFullDate === full){
+          day.classList.add('selected');
+        }
+
+        day.addEventListener('click', () => {
+          selectedFullDate = full;
+          bookingDate.value = full;
+          selectedDateText.textContent = `已選擇日期：${full}`;
+          renderCalendar(currentYear, currentMonth);
+        });
+
+        calendarDays.appendChild(day);
+      }
+
+      const totalCells = firstDay + lastDate;
+      const remain = totalCells % 7 === 0 ? 0 : 7 - (totalCells % 7);
+
+      for(let i = 1; i <= remain; i++){
+        const day = document.createElement('button');
+        day.className = 'day muted';
+        day.textContent = i;
+        calendarDays.appendChild(day);
+      }
+    }
+
+    prevMonth.addEventListener('click', () => {
+      currentMonth--;
+      if(currentMonth < 0){
+        currentMonth = 11;
+        currentYear--;
+      }
+      renderCalendar(currentYear, currentMonth);
+    });
+
+    nextMonth.addEventListener('click', () => {
+      currentMonth++;
+      if(currentMonth > 11){
+        currentMonth = 0;
+        currentYear++;
+      }
+      renderCalendar(currentYear, currentMonth);
+    });
+
+    renderCalendar(currentYear, currentMonth);
+  </script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
