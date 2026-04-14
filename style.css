@@ -112,8 +112,8 @@
   right: 16px;
   bottom: 100px;
 
-  padding: 18px 26px;   /* 🔥 再放大 */
-  font-size: 18px;      /* 🔥 字變大 *深色/
+  padding: 18px 26px;
+  font-size: 18px;
 
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
@@ -121,11 +121,12 @@
 
   border-radius: 30px;
 
+  border: 1px solid rgba(255,255,255,0.2); /* 🔥 外框回來 */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* 🔥 立體感 */
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 
   z-index: 9999;
 }
